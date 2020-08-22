@@ -1,2 +1,2 @@
 <?php
-echo "Hello LINE BOT \"Witthaya_193!!\"";
+echo "LINE BOT BY \"Witthaya_193!!\"";
