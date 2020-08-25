@@ -44,6 +44,9 @@ if ( sizeof($request_array['events']) > 0 )
 		if($text == "CDMA"){
 		     $reply_message = '+1,-3,-1,-1';
 		    }
+		if($text.find->("@bot") == true){
+		     $reply_message = '+1,-3,-1,-1';
+		    }
 	   	/*$str_header = str_split($text,5));
 	   	echo $str_header;
 		if($text == str_split($text,5)){
