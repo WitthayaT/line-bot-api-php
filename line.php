@@ -43,9 +43,11 @@ if ( sizeof($request_array['events']) > 0 )
 		     $reply_message = 'ติดเชื้อสะสม '. $obj->{'Confirmed'}.'คน'."\r\n".'รักษาหายแล้ว'. $obj->{'Recovered'}.'คน';
 		    }
 		if($text == "CDMA"){
-		 
 		     $reply_message = '+1,-3,-1,-1';
 		    }
+		if($text == str_split($text,5)){
+			 $reply_message = str_split($text,5);
+		}
 		//$reply_message = '('.$text.') ได้รับข้อความเรียบร้อย!!';   
    }
    else
