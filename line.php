@@ -23,9 +23,8 @@ if ( sizeof($request_array['events']) > 0 )
 		$text = $event['message']['text'];
 		if($text == "ชื่ออะไรครับ" || $text == "ชื่ออะไร" || $text == "ชื่อ"){
 			$reply_message = 'meow meow meowwwwww~';
-		}else{
-		$reply_message = 'hmmmmmm lalala meow';   
 		}
+	   
 		    if($text == "สถานการณ์โควิดวันนี้" || $text == "covid19" || $text == "covid-19" || $text == "Covid-19"){
 		     $url = 'https://covid19.th-stat.com/api/open/today';
 		     $ch = curl_init($url);
