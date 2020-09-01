@@ -44,7 +44,9 @@ if ( sizeof($request_array['events']) > 0 )
 		if($text == "CDMA"){
 		     $reply_message = '+1,-3,-1,-1';
 		    }
-		
+		if ( strstr( $text, 'บอท' ) ) {
+		     $reply_message = 'test  test';
+		}
 		//$reply_message = '('.$text.') ได้รับข้อความเรียบร้อย!!';   
    }
    else
