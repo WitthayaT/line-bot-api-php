@@ -44,10 +44,9 @@ if ( sizeof($request_array['events']) > 0 )
 		if($text == "CDMA"){
 		     $reply_message = '+1,-3,-1,-1';
 		    }
-		if ( strstr( $text, '@บอท' ) ) {
-			if( strstr( $text, 'ทอง' ) ){
-		     		$reply_message = 'ราคาทองวันนี้ 200000';
-			}
+	   
+		if($text == "@บอท ขอรหัสนิสิตของผู้พัฒนา ส่งไปที่ https://linebot.kantit.com/stuid.php"){
+			$reply_message = 'OK';
 		}
 		//$reply_message = '('.$text.') ได้รับข้อความเรียบร้อย!!';   
    }
